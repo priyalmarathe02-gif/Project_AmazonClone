@@ -26,6 +26,9 @@ This project evolves from a static responsive UI to a fully functional applicati
 ### Mobiles Section
 ![Mobiles Section](/Screenshots/MOBILES_SECTION_MAIN.png)
 
+## Footer
+![Footer](/Screenshots/FOOTER.png)
+
 ---
 
 ## Navigation & UI Components
@@ -41,7 +44,4 @@ This project evolves from a static responsive UI to a fully functional applicati
 ## Product Page
 ![Product Page](/Screenshots/PRODUCT_PAGE.png)
 
----
 
-## Footer
-![Footer](/Screenshots/FOOTER.png)
