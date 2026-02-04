@@ -1,6 +1,6 @@
 # Project_AmazonClone
 
-<br></br>
+---
 
 A version-wise e-commerce clone inspired by Amazon, developed to demonstrate frontend to full stack web development skills.  
 This project evolves from a static responsive UI to a fully functional application.
