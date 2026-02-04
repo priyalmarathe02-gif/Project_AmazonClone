@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion - Amazon.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .category-header {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR (Same as index.html) -->
+    <header class="navbar">
+        <div class="nav-left-box">
+            <a href="index.html#menu" class="hamburger">☰</a>
+            <a href="index.html"><img src="images/Amazon.jpg" class="logo" alt="Amazon"></a>
+        </div>
+        <div class="search-bar">
+            <select id="categorySelect">
+                <option value="fashion" selected>Amazon Fashion</option>
+                <option value="all">All Categories</option>
+            </select>
+            <input type="text" placeholder="Search Women's Fashion">
+            <button class="search-btn">🔍</button>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item"><span class="line-1">Hello, Sign in</span><span class="line-2">Account</span></div>
+            <div class="nav-item cart-box"><span class="cart-icon">🛒</span><span class="line-2">Cart</span></div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="category-header">
+            <h1>Women's Fashion</h1>
+            <p>Explore the latest trends in women's clothing, footwear, and accessories.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Reuse product cards from index.html -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="product-details.html#1"><img src="images/FAB_DRESS.png" alt="Fab Dress"></a>
+                </div>
+                <div class="product-info">
+                    <a href="product-details.html#1">
+                        <h4>Fab Dress</h4>
+                    </a>
+                    <div class="rating">★★★★☆ <span>(1,250)</span></div>
+                    <div class="price">₹2,499</div>
+                    <div class="actions">
+                        <button class="add-btn">Add to Cart</button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ... more cards ... -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="product-details.html#2"><img src="images/FOREVER_NEW_DRESS.png"
+                            alt="Forever New Dress"></a>
+                </div>
+                <div class="product-info">
+                    <a href="product-details.html#2">
+                        <h4>Forever New Dress</h4>
+                    </a>
+                    <div class="rating">★★★★★ <span>(890)</span></div>
+                    <div class="price">₹3,999</div>
+                    <div class="actions">
+                        <button class="add-btn">Add to Cart</button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="product-details.html#3"><img src="images/LV_DRESS.png" alt="LV Dress"></a>
+                </div>
+                <div class="product-info">
+                    <a href="product-details.html#3">
+                        <h4>LV Dress</h4>
+                    </a>
+                    <div class="rating">★★★★½ <span>(450)</span></div>
+                    <div class="price">₹5,999</div>
+                    <div class="actions">
+                        <button class="add-btn">Add to Cart</button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="product-details.html#4"><img src="images/ZARA_DRESS.png" alt="Zara Dress"></a>
+                </div>
+                <div class="product-info">
+                    <a href="product-details.html#4">
+                        <h4>Zara Dress</h4>
+                    </a>
+                    <div class="rating">★★★★☆ <span>(2,100)</span></div>
+                    <div class="price">₹2,999</div>
+                    <div class="actions">
+                        <button class="add-btn">Add to Cart</button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="product-details.html#19"><img src="images/H&M_DRESS.png" alt="H&M Dress"></a>
+                </div>
+                <div class="product-info">
+                    <a href="product-details.html#19">
+                        <h4>H&M Floral Dress</h4>
+                    </a>
+                    <div class="rating">★★★★½ <span>(2,100)</span></div>
+                    <div class="price">₹3,499</div>
+                    <div class="actions">
+                        <button class="add-btn">Add to Cart</button>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="amazon-footer">
+        <!-- (Same as index.html) -->
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Amazon.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-detail-section {
+            display: none;
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        .product-detail-section:target {
+            display: block;
+        }
+
+        .detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .detail-img-box {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .detail-img-box img {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+        }
+
+        .detail-info-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .detail-info-box h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .detail-info-box .price {
+            color: #B12704;
+            font-size: 24px;
+        }
+
+        .specs-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .specs-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .specs-table td:first-child {
+            font-weight: bold;
+            width: 150px;
+        }
+
+        .buy-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            min-width: 250px;
+            height: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-left-box">
+            <a href="index.html" class="logo"><img src="images/Amazon.jpg" class="logo" alt="Amazon"></a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" style="color:white; font-weight:bold;">← Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Product 1: Fab Dress -->
+    <div id="1" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/FAB_DRESS.png" alt="Fab Dress"></div>
+            <div class="detail-info-box">
+                <h1>Fab Dress</h1>
+                <div class="rating">★★★★☆ <span>(1,250 reviews)</span></div>
+                <hr>
+                <div class="price">₹2,499</div>
+                <p>Inclusive of all taxes</p>
+                <hr>
+                <h3>Product Details</h3>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Multicolor</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Cotton</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>Regular Fit</td>
+                    </tr>
+                    <tr>
+                        <td>Occasion</td>
+                        <td>Casual</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹2,499</div>
+                <p style="color:#007600">In stock</p><button class="add-btn w-100 mb-2">Add to Cart</button><button
+                    class="buy-btn w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 2: Forever New Dress -->
+    <div id="2" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/FOREVER_NEW_DRESS.png" alt="Forever New Dress"></div>
+            <div class="detail-info-box">
+                <h1>Forever New Dress</h1>
+                <div class="rating">★★★★★ <span>(890 reviews)</span></div>
+                <hr>
+                <div class="price">₹3,999</div>
+                <hr>
+                <h3>Product Details</h3>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>White/Floral</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Polyester</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>Slim Fit</td>
+                    </tr>
+                    <tr>
+                        <td>Occasion</td>
+                        <td>Party</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹3,999</div><button class="add-btn w-100 mb-2">Add to Cart</button><button
+                    class="buy-btn w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 3: LV Dress -->
+    <div id="3" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/LV_DRESS.png"></div>
+            <div class="detail-info-box">
+                <h1>LV Dress</h1>
+                <div class="rating">★★★★½ <span>(450)</span></div>
+                <hr>
+                <div class="price">₹5,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Silk Mix</td>
+                    </tr>
+                    <tr>
+                        <td>Occasion</td>
+                        <td>Formal</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹5,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 4: Zara Dress -->
+    <div id="4" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/ZARA_DRESS.png"></div>
+            <div class="detail-info-box">
+                <h1>Zara Dress</h1>
+                <div class="rating">★★★★☆ <span>(2,100)</span></div>
+                <hr>
+                <div class="price">₹2,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Peach</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Rayon</td>
+                    </tr>
+                    <tr>
+                        <td>Occasion</td>
+                        <td>Summer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹2,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 5: Hermes Sweatshirt -->
+    <div id="5" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/HERMES_SWEATSHIRT.png"></div>
+            <div class="detail-info-box">
+                <h1>Hermes Sweatshirt</h1>
+                <div class="rating">★★★★★ <span>(120)</span></div>
+                <hr>
+                <div class="price">₹6,499</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Orange</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Premium Cotton</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>Comfort</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹6,499</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 6: LV Sweatshirt -->
+    <div id="6" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/LV_SWEATSHIRT.png"></div>
+            <div class="detail-info-box">
+                <h1>LV Sweatshirt</h1>
+                <div class="rating">★★★★½ <span>(340)</span></div>
+                <hr>
+                <div class="price">₹5,499</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Grey</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Wool Blend</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹5,499</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 7: Puma Sweatshirt -->
+    <div id="7" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/PUMA_SWEATSHIRT.png"></div>
+            <div class="detail-info-box">
+                <h1>Puma Sweatshirt</h1>
+                <div class="rating">★★★★☆ <span>(5,600)</span></div>
+                <hr>
+                <div class="price">₹3,499</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Fit</td>
+                        <td>Sporty</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹3,499</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 8: Zara Sweatshirt -->
+    <div id="8" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/ZARA_SWEATSHIRT.png"></div>
+            <div class="detail-info-box">
+                <h1>Zara Sweatshirt</h1>
+                <div class="rating">★★★★☆ <span>(2,300)</span></div>
+                <hr>
+                <div class="price">₹2,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Heavy Cotton</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹2,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 9: Mi TV -->
+    <div id="9" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/MI_4A.png"></div>
+            <div class="detail-info-box">
+                <h1>Mi TV 4A 43-inch</h1>
+                <div class="rating">★★★★☆ <span>(45,000)</span></div>
+                <hr>
+                <div class="price">₹29,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Size</td>
+                        <td>43 inch</td>
+                    </tr>
+                    <tr>
+                        <td>Smart</td>
+                        <td>Android TV</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹29,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 10: Samsung TV -->
+    <div id="10" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/NEO_QLED_SAMSUNG.png"></div>
+            <div class="detail-info-box">
+                <h1>Samsung Neo QLED</h1>
+                <div class="rating">★★★★★ <span>(1,200)</span></div>
+                <hr>
+                <div class="price">₹89,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Size</td>
+                        <td>55 inch</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>Neo QLED 4K</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹89,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 11: Sony TV -->
+    <div id="11" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/SONY_BRAVIA_9_MINI.png"></div>
+            <div class="detail-info-box">
+                <h1>Sony Bravia 9 Mini</h1>
+                <div class="rating">★★★★★ <span>(800)</span></div>
+                <hr>
+                <div class="price">₹99,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Size</td>
+                        <td>65 inch</td>
+                    </tr>
+                    <tr>
+                        <td>Smart</td>
+                        <td>Google TV</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹99,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 12: Panasonic TV -->
+    <div id="12" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/PANASONIC_4K_ULTRA_INCH.png"></div>
+            <div class="detail-info-box">
+                <h1>Panasonic 4K Ultra</h1>
+                <div class="rating">★★★★☆ <span>(3,200)</span></div>
+                <hr>
+                <div class="price">₹54,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Size</td>
+                        <td>50 inch</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹54,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 13: OnePlus -->
+    <div id="13" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/ONEPLUS14.png"></div>
+            <div class="detail-info-box">
+                <h1>OnePlus 14 Pro</h1>
+                <div class="rating">★★★★½ <span>(15,600)</span></div>
+                <hr>
+                <div class="price">₹69,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Memory</td>
+                        <td>12GB RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>256GB</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹69,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 14: iPhone 13 -->
+    <div id="14" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/IPHONE_13.jpg"></div>
+            <div class="detail-info-box">
+                <h1>iPhone 13</h1>
+                <div class="rating">★★★★½ <span>(89,000)</span></div>
+                <hr>
+                <div class="price">₹75,000</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Screen</td>
+                        <td>6.1 inch</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹75,000</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 15: Samsung Galaxy S24 -->
+    <div id="15" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/SAMSUNG.png"></div>
+            <div class="detail-info-box">
+                <h1>Samsung Galaxy S24</h1>
+                <div class="rating">★★★★½ <span>(5,400)</span></div>
+                <hr>
+                <div class="price">₹1,20,000</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Storage</td>
+                        <td>512GB</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>12GB</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹1,20,000</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 16: Vivo V30 Pro -->
+    <div id="16" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/VIVO.png"></div>
+            <div class="detail-info-box">
+                <h1>Vivo V30 Pro</h1>
+                <div class="rating">★★★★☆ <span>(12,000)</span></div>
+                <hr>
+                <div class="price">₹29,999</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Screen</td>
+                        <td>6.5 inch OLED</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹29,999</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 17: Infinix Mobile 5G -->
+    <div id="17" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/INFINIX_MOBILE5G.png" alt="Infinix Mobile 5G"></div>
+            <div class="detail-info-box">
+                <h1>Infinix Mobile 5G</h1>
+                <div class="rating">★★★★☆ <span>(8,500 reviews)</span></div>
+                <hr>
+                <div class="price">₹18,999</div>
+                <hr>
+                <h3>Technical Details</h3>
+                <table class="specs-table">
+                    <tr>
+                        <td>Memory</td>
+                        <td>8GB RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>256GB ROM</td>
+                    </tr>
+                    <tr>
+                        <td>Screen</td>
+                        <td>6.7 inch FHD+</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹18,999</div><button class="add-btn w-100 mb-2">Add to Cart</button><button
+                    class="buy-btn w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 18: LG ThinQ TV -->
+    <div id="18" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/LG_TV_THINQ.png" alt="LG ThinQ TV"></div>
+            <div class="detail-info-box">
+                <h1>LG ThinQ LED TV</h1>
+                <div class="rating">★★★★½ <span>(12,400 reviews)</span></div>
+                <hr>
+                <div class="price">₹45,999</div>
+                <hr>
+                <h3>TV Specifications</h3>
+                <table class="specs-table">
+                    <tr>
+                        <td>Size</td>
+                        <td>50 inch</td>
+                    </tr>
+                    <tr>
+                        <td>Resolution</td>
+                        <td>4K Ultra HD</td>
+                    </tr>
+                    <tr>
+                        <td>Smart TV</td>
+                        <td>WebOS</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹45,999</div><button class="add-btn w-100 mb-2">Add to Cart</button><button
+                    class="buy-btn w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 19: H&M Floral Dress -->
+    <div id="19" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/H&M_DRESS.png" alt="H&M Floral Dress"></div>
+            <div class="detail-info-box">
+                <h1>H&M Floral Dress</h1>
+                <div class="rating">★★★★½ <span>(2,100 reviews)</span></div>
+                <hr>
+                <div class="price">₹3,499</div>
+                <hr>
+                <h3>Product Details</h3>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Floral Print</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Cotton Mix</td>
+                    </tr>
+                    <tr>
+                        <td>Occasion</td>
+                        <td>Outdoor</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹3,499</div><button class="add-btn w-100 mb-2">Add to Cart</button><button
+                    class="buy-btn w-100">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 20: H&M Men Sweatshirt -->
+    <div id="20" class="product-detail-section">
+        <div class="detail-container">
+            <div class="detail-img-box"><img src="images/H&M_SWEATSHIRT.png"></div>
+            <div class="detail-info-box">
+                <h1>H&M Men Sweatshirt</h1>
+                <div class="rating">★★★★☆ <span>(3,500)</span></div>
+                <hr>
+                <div class="price">₹2,499</div>
+                <hr>
+                <table class="specs-table">
+                    <tr>
+                        <td>Color</td>
+                        <td>Grey</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Cotton Blend</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buy-box">
+                <div class="price">₹2,499</div><button class="add-btn w-100 mb-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Placeholder for other IDs... -->
+    <div id="default" class="product-detail-section" style="display:block; text-align:center;">
+        <h2>Please select a product from the home page.</h2>
+        <a href="index.html">Go Back</a>
+    </div>
+
+
+
+</body>
+
+</html>
